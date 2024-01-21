@@ -26,5 +26,13 @@ public class UserSeeder {
             user.setTokenExpiredAt(100000000000000L);
             userRepository.save(user);
         }
+        User user = new User();
+        user.setIdUser("betatester");
+        user.setUsername("esa");
+        user.setEmail("betatester" + "@gmail.com");
+        user.setPassword("11");
+        user.setToken("token");
+        user.setTokenExpiredAt(100000000000000L);
+        userRepository.save(user);
     }
 }
